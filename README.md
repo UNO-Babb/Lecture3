@@ -187,10 +187,92 @@ print("End of the game.")
   y = 9
   z = 12
   ```
-  -[] x < y
-  -[] x > y
-  -[] x == y - z
-  -[] y - z <= 0
-  -[] z / 4 > y / 3
+  - [ ] x < y
+  - [ ] x > y
+  - [ ] x == y - z
+  - [ ] y - z <= 0
+  - [ ] z / 4 > y / 3
 
-1.
+1. Based on the following information, which statements would be True?
+  ```
+  x = 21
+  y = 9
+  z = 12
+  ```
+  - [ ] x > z and x > y
+  - [ ] x < z or y < z
+  - [ ] z == x + y and x = y + z
+  - [ ] z + x > z + y or y < x - z
+
+1. Based on the following information, which statements would trigger a short-circuit evaluation?
+
+  Note: not which is true or false, just short-circuit.
+  ```
+  lives = 3
+  playAgain = "Yes"
+  ```
+  - [ ] lives <= 0 or playAgain == "No"
+  - [ ] lives <= 0 and playAgain == "Yes"
+  - [ ] playAgain == "Yes" or lives >= 0
+  - [ ] playAgain == "Yes" and lives >= 0
+
+1. Under which conditions will the code print "Guess again."
+  ```
+  num = input("Guess a number: ")
+  num = int(num)
+  if num <= 42:
+    print("You win!")
+  else:
+    print ("Guess again.")
+  ```
+  - It happens every time, no matter what number the user picks.
+  - Anytime the user picks the number 42.
+  - Anytime the user picks a number that is not 42.
+  - Anytime the user picks a number that is greater than 42.
+
+1. For what values of time will the program respond "Time to leave."?
+  ```
+  if time < 900:
+    print("Get ready for class.")
+  elif time <= 1015:
+    print("In class and loving it.")
+  elif time <= 1030:
+    print("Time to leave.")
+  else:
+    print("Enjoy the rest of your day.")
+  ```
+  - Anytime before 1030
+  - Anytime after 1030
+  - Anytime between 900 and 1015
+  - Anytime between 1016 and 1030
+
+1. What values would be output by the following code?
+  ```
+  for i in range(2, 9, 3):
+    print(i)
+  ```
+  - 2, 5, 8
+  - 2, 5, 8, 11
+  - 2, 3, 4
+  - 2, 3, 4, 5, 6, 7, 8
+
+1. What will cause the loop to end? (select all that apply)
+  ```
+  guess = -1
+  secret = 42
+  count = 0
+  while (guess != secret and count < 5):
+    guess = input("Enter your guess: ")
+    guess = int(guess)
+    count = count + 1
+
+  if guess == secret:
+    print("You got it!")
+  else:
+    print("Sorry, not correct")
+
+  ```
+  - [ ] guess = 42
+  - [ ] guess is not 42
+  - [ ] user has fewer than 5 attempts
+  - [ ] user has attempted 5 times
