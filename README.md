@@ -8,7 +8,7 @@ Discuss and demonstrate:
   - if-else
   - for loops
   - while loops
-- Short-circuit evaluation 
+- Short-circuit evaluation
 
 
 ## Boolean Logic
@@ -70,34 +70,127 @@ False
 The hour is not evaluated since the first statement is False. This is often used to avoid potential errors.
 ```
 >>> import math
->>> x = 16
->>> x >= 0 and math.sqrt(x) < 5
-True
 >>> x = -20
->>> x >= 0 and math.sqrt(x) < 5
-False
+
 >>> math.sqrt(x)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: math domain error
+
+>>> x >= 0 and math.sqrt(x) < 5
+False
+
+>>> x = 16
+>>> x >= 0 and math.sqrt(x) < 5
+True
 ```
 The same is true with **or** statements. This time, a True statement in the first position will result in a True result. As a result, the second expression is not evaluated if the first expression is True.
 
 There are many reasons we may want to short circuit an operation, especially if the it is a difficult or costly operation.
+
+## if-else statements
+**Note: Indentation matters**
 ```
->>>
+if <condition>:
+  statement1
+  statement2
+  etc...
 ```
-NEED TO FINISH THIS SECTION.
-## Ranges
+The indented statements will only execute if the <condition> is true.
+```
+x = 5
+if x > 2:
+  print ("The statement x > 2 is TRUE!")
 
-## Control Statements
+print("This line happens either way.")
+```
+What do you do if the if condition is not true?
+```
+grade = input("Enter your grade: ")
+grade = int(grade) #convert from string to integer
 
-### if-else statements
+if(grade >= 70):
+  print("You passed!")
+else:
+  print("You need to study more.")
+```
+What if there are multiple options?
+```
+if(grade >= 90):
+  print("You got an A")
+elif(grade > 80):
+  print("You got a B")
+elif(grade > 70):
+  print("You got a C")
+elif(grade > 60):
+  print("You got a D")
+else:
+  print("You got a F")
+  ```
 
-### for loops
+## for loops
+For loops in Python will iterate across a list. The variable you create for the loop will be each of the items in the list in order.
+```
+>>> ages = [19, 18, 22, 20]
+>>> for i in ages:
+      print(i)
+19
+18
+22
+20
+```
+### Ranges
+The range function is an easy way to create a list for our loop to iterate over.  
+```
+range(10) -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-### while loops
+>>> for i in range(10):
+      print(i)
+```
+You can also give the range function a start, stop, and increment amount.  
+```
+#range(start, end, increment)
+#Example
+>>> for i in range(10, 20, 2):
+      print(i)
+```
 
-## Coding Bat
+## while loops
+A while loop works like an if statement where a boolean expression will determine if the loop continues. Every loop should have 3 important things.
+- Initialize a variable
+- Check the variable
+- Change the variable... in a way that will eventually end.  
+
+```
+>>> x = 10 #initalize
+>>> while (x > 0):  #check the variable
+      print(x)
+      x = x - 1     #change the variable
+```
+Loops do not need to be determined by the value of a number, it could be a state that we are waiting to change.
+```
+play = "Yes" # initialize
+while (play == "Yes"): # check the variable
+  <some game goes here>
+  play = input("Play again? (Yes/No): ") #change the variable
+
+print("End of the game.")
+```
+---
+### Coding Bat
+[Codingbat.com](https://codingbat.com/python) is a site where you can practice small programming challenges. The functions are tested against known answers to verify that you have correctly solved each challenge. This is know as unit testing.
 
 ## Quiz
+1. Based on the following information, which statements would be True?
+  ```
+  x = 21
+  y = 9
+  z = 12
+  ```
+  - [] x < y
+  - [] x > y
+  - [] x == y - z
+  - [] y - z <= 0
+  - [] z / 4 > y / 3
+
+1. 
