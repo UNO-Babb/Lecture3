@@ -1,4 +1,4 @@
-# Lecture 3 - CYBR 2980
+# Lecture 3 - CIST 1600
 
 ## Objectives:
 Discuss and demonstrate:
