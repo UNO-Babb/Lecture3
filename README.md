@@ -193,7 +193,7 @@ print("End of the game.")
   - [ ] y - z <= 0
   - [ ] z / 4 > y / 3
 
-1. Based on the following information, which statements would be True?
+2. Based on the following information, which statements would be True?
   ```
   x = 21
   y = 9
@@ -204,7 +204,7 @@ print("End of the game.")
   - [ ] z == x + y and x = y + z
   - [ ] z + x > z + y or y < x - z
 
-1. Based on the following information, which statements would trigger a short-circuit evaluation?
+3. Based on the following information, which statements would trigger a short-circuit evaluation?
 
   Note: not which is true or false, just short-circuit.
   ```
@@ -216,7 +216,7 @@ print("End of the game.")
   - [ ] playAgain == "Yes" or lives >= 0
   - [ ] playAgain == "Yes" and lives >= 0
 
-1. Under which conditions will the code print "Guess again."
+4. Under which conditions will the code print "Guess again."
   ```
   num = input("Guess a number: ")
   num = int(num)
@@ -230,7 +230,7 @@ print("End of the game.")
   - Anytime the user picks a number that is not 42.
   - Anytime the user picks a number that is greater than 42.
 
-1. For what values of time will the program respond "Time to leave."?
+5. For what values of time will the program respond "Time to leave."?
   ```
   if time < 900:
     print("Get ready for class.")
@@ -246,7 +246,7 @@ print("End of the game.")
   - Anytime between 900 and 1015
   - Anytime between 1016 and 1030
 
-1. What values would be output by the following code?
+6. What values would be output by the following code?
   ```
   for i in range(2, 9, 3):
     print(i)
@@ -256,7 +256,7 @@ print("End of the game.")
   - 2, 3, 4
   - 2, 3, 4, 5, 6, 7, 8
 
-1. What will cause the loop to end? (select all that apply)
+7. What will cause the loop to end? (select all that apply)
   ```
   guess = -1
   secret = 42
